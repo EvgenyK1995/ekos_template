@@ -1,0 +1,34 @@
+/*
+Theme Name: ekos-theme
+Author: Ekos-admin
+Description: Ekos site theme with WordPress
+Version: 1.0
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap')
+@import "modules/header.styl"
+@import "modules/content.styl"
+@import "modules/footer.styl"
+
+html
+body
+  background-color #E5E5E5
+  font-family 'Montserrat', sans-serif, Arial
+  margin 0
+  padding 0
+
+.wrapper
+section
+  min-height calc(100vh - 180px)
+  width 100%
+
+.content-page
+  box-sizing border-box
+  display block
+  font-size 18px
+  margin 0 auto
+  max-width 1000px
+  padding 50px 20px
+  width 100%
+  @media (max-width 768px)
+    font-size 14px

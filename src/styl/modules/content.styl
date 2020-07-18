@@ -1,0 +1,504 @@
+.separator
+  background-color #81B0DA
+  display block
+  height 6px
+  margin 2.5vw 0
+  width 100px
+
+/** Page about **/
+.page-about
+  align-items center
+  background-color #fff
+  display flex
+  flex-direction column
+  @media (max-width 768px)
+    flex-flow row wrap
+
+.about-header
+  align-items stretch
+  box-sizing border-box
+  display flex
+  flex-basis 100%
+  max-height 625px
+  justify-content space-between
+  width 100%
+  @media (max-width 768px)
+    flex-wrap wrap
+    max-height 100%
+
+  .image-container
+    flex-basis 50%
+    height auto
+    width 50%
+    @media (max-width 768px)
+      background-position top center !important
+      flex-basis 100%
+      min-height 200px
+      width 100%
+
+  &-right
+    background-color #f2f5fa
+    display flex
+    flex-basis 50%
+    flex-direction column
+    padding 25px 60px
+    @media (max-width 768px)
+      box-sizing border-box
+      flex-basis 100%
+      height auto
+      padding 20px
+
+  .title
+    font-size 48px
+    font-weight 600
+    margin 0
+    @media (max-width 768px)
+      font-size 24px
+
+  .description-mini
+    font-size 18px
+    font-weight 500
+    @media (max-width 768px)
+      font-size 16px
+
+.description
+  font-size 16px
+  font-weight 500
+  line-height 20px
+  max-width 925px
+  padding 45px 0
+  @media (max-width 768px)
+    font-size 14px
+    padding 20px
+
+/** Page about **/
+
+
+
+/** Page products **/
+.page-products
+  align-items flex-start
+  box-sizing border-box
+  display flex
+  justify-content center
+  width 100%
+  @media (max-width 768px)
+    flex-wrap wrap
+
+  .products-left
+    align-items flex-start
+    box-sizing border-box
+    display flex
+    flex-basis 430px
+    flex-direction column
+    justify-content flex-start
+    padding-left 60px
+    padding-top 20px
+    @media (max-width 768px)
+      box-sizing border-box
+      flex-basis 100%
+      padding 20px
+
+    .title
+      font-size 48px
+      font-weight 600
+      margin 0
+      max-width 300px
+      @media (max-width 768px)
+        font-size 24px
+        max-width 100%
+
+    .description-mini
+      font-size 16px
+      font-weight 500
+      margin 0
+      max-width 300px
+      @media (max-width 768px)
+        max-width 100%
+
+.products
+  box-sizing border-box
+  display flex
+  flex 1
+  flex-wrap wrap
+  justify-content center
+  max-width 1000px
+  padding 30px 30px 30px 0
+  @media (max-width 540px)
+    padding 0
+  @media (max-width 768px)
+    padding 20px
+
+  .product
+    color #fff
+    display flex
+    flex-basis 49%
+    height 280px
+    margin 1px
+    max-width 440px
+    min-width 275px
+    position relative
+    text-decoration none
+    @media (max-width 540px)
+      flex-basis 100%
+      width 100%
+    @media (max-width 768px)
+      max-height 200px
+      &-title
+        font-size 20px
+      &-description-mini
+        font-size 12px
+
+    &-hover
+      background-color #365BA0
+      display none
+      height 280px
+      max-width 440px
+      min-width 275px
+      opacity 0.9
+      position absolute
+      width 100%
+      z-index 5
+
+    &-btn
+      background-color #81B0DA
+      border none
+      color #fff
+      cursor pointer
+      display none
+      font-size 14px
+      font-weight bold
+      height 55px
+      letter-spacing 0.05em
+      position absolute
+      text-transform uppercase
+      top 170px
+      width 175px
+      @media (max-width 768px)
+        display block
+        top 130px
+
+      &:hover
+        background-color #63A5E0
+
+    &:hover >
+      .product-hover
+        display block
+        @media (max-width 768px)
+          display none
+      .product-info
+        .product-btn
+          display block
+
+    &-image
+      height 100%
+      object-fit cover
+      width 100%
+
+    &-info
+      display flex
+      flex-direction column
+      justify-content left
+      padding 30px
+      position absolute
+      z-index 10
+      @media (max-width 540px)
+        padding 16px 20px 0
+
+    &-title
+      font-size 24px
+      font-weight bold
+      margin 0
+      max-width 390px
+      text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      @media (max-width 540px)
+        font-size 18px
+
+    &-description-mini
+      font-size 16px
+      font-weight 500
+      margin 0
+      max-width 390px
+      text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      @media (max-width 540px)
+        font-size 14px
+        font-weight normal
+
+/** Page products **/
+
+
+
+/** Page contacts **/
+.page-contacts
+  background-color #333
+  display block
+  position relative
+  width 100%
+
+  .contacts-map
+    display block
+    height 700px
+    position relative
+    width 100%
+    z-index 10
+    @media (max-width 768px)
+      height 820px
+
+  .contacts-info
+    align-items flex-start
+    display flex
+    flex-direction column
+    justify-content flex-start
+    padding 80px 65px 10px
+    left 0
+    position absolute
+    top 0
+    z-index 50
+    @media (max-width 768px)
+      padding 50px 20px
+
+    .title
+      color #fff
+      font-size 48px
+      font-weight bold
+      @media (max-width 768px)
+        font-size 24px
+
+    .contact-number
+    .contact-email
+    .contact-address
+      color #fff
+      font-size 18px
+      margin 5px 0
+      @media (max-width 768px)
+        display block
+
+    .contact-form
+      @media (max-width 768px)
+        margin-top 200px
+      .title
+        font-size 24px
+        @media (max-width 768px)
+          font-size 18px
+
+/** Page contacts **/
+
+
+
+/** Front page **/
+.btn
+  align-items center
+  background-color #81B0DA
+  color #fff
+  display flex
+  font-size 14px
+  font-weight bold
+  height 55px
+  justify-content center
+  text-decoration none
+  width 155px
+
+  &-to-products
+    margin-top 60px
+
+  &-to-about
+    margin-top 40px
+
+  &:hover
+    background-color #63A5E0
+
+.contacts
+  background-color #333
+  box-sizing border-box
+  display block
+  padding 100px 65px
+  position relative
+  width 100%
+  @media (max-width 768px)
+    padding 30px 20px
+
+  .title
+    color #fff
+    font-size 48px
+    font-weight normal
+    max-width 500px
+    min-width 320px
+    @media (max-width 768px)
+      box-sizing border-box
+      font-size 24px
+      min-width auto
+      width 100%
+
+  &-map
+    display block
+    height 100%
+    left 0
+    position absolute
+    top 0
+    width 100%
+    z-index 10
+
+  &-info
+    display flex
+    position relative
+    z-index 50
+
+/** Front page **/
+
+
+
+/** Contacts form style **/
+.wpcf7
+  &-form
+    box-sizing border-box
+    max-width 320px
+    @media (max-width 768px)
+      width 100%
+
+    label
+      color #fff
+      font-size 14px
+      font-weight bold
+
+    &-control
+      background none
+      border none
+      border-bottom 1px solid #fff
+      box-sizing border-box
+      color #fff
+      height 40px
+      max-width 320px
+      padding-left 10px
+      @media (max-width 768px)
+        width 100%
+
+      &:active
+      &:focus
+        outline none
+
+  &-submit
+    background-color #81B0DA
+    border none
+    color #fff
+    cursor pointer
+    font-size 14px
+    font-weight bold
+    height 55px
+    letter-spacing 0.05em
+    text-transform uppercase
+    width 155px
+    @media (max-width 768px)
+      width 155px
+
+    &:hover
+      background-color #63A5E0
+
+  &-validation-errors
+  &-acceptance-missing
+    border 1px solid #ded769 !important
+    border-radius 5px
+    color #fff
+    margin 2em 0 1em !important
+    padding 0.5em 1em !important
+
+  &-response-output
+    border 1px solid #f52929 !important
+    border-radius 5px
+    color #fff
+    margin 2em 0 1em !important
+    padding 0.5em 1em !important
+
+  &-mail-sent-ok
+    border 1px solid #398f14 !important
+    border-radius 5px
+    color #fff
+    margin 2em 0 1em !important
+    padding 0.5em 1em !important
+
+.to-privacy
+  box-sizing border-box
+  color #fff
+  font-size 14px
+  font-weight 500
+  max-width 320px
+
+  a
+    color #fff
+
+/** Contacts form style **/
+
+
+
+/** Single page **/
+.single-product
+  align-items center
+  display flex
+  justify-content left
+  min-height 720px
+  width 100%
+  @media (max-width 768px)
+    padding-top 50px
+    min-height 100%
+
+  &-info
+    align-items flex-start
+    box-sizing border-box
+    display flex
+    flex-direction column
+    padding 0 65px
+    width 100%
+    @media (max-width 768px)
+      box-sizing border-box
+      padding 20px
+
+    .title
+      color #fff
+      font-size 48px
+      font-weight bold
+      text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.25);
+      @media (max-width 768px)
+        font-size 24px
+
+    .description-mini
+      color #fff
+      font-size 24px
+      font-weight 500
+      max-width 50%
+      text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.25);
+      @media (max-width 768px)
+        box-sizing border-box
+        font-size 18px
+        max-width 100%
+
+    .description
+      color #fff
+      font-size 18px
+      font-weight 500
+      text-shadow 1px 2px 2px rgba(0, 0, 0, 0.25), 0 -2px 5px rgba(0, 0, 0, 0.25)
+      width 100%
+      @media (max-width 768px)
+        font-size 14px
+        padding 0
+
+.other-products
+  box-sizing border-box
+  display block
+  margin 0 auto
+  max-width 1300px
+  padding 0 65px 20px
+  width 100%
+  @media (max-width 768px)
+    padding 20px 0
+
+  .title
+    font-size 24px
+    font-weight bold
+    text-align center
+    @media (max-width 768px)
+      font-size 18px
+      padding 0 20px
+
+  .products
+    margin 0 auto
+
+/** Single page **/

@@ -1,0 +1,59 @@
+.footer
+  align-items flex-start
+  background-color #365BA0
+  box-sizing border-box
+  color #fff
+  display flex
+  flex-basis 100%
+  font-size 14px
+  font-weight 500px
+  height 180px
+  justify-content space-between
+  padding 45px 70px
+  width 100%
+  @media (max-width 768px)
+    flex-wrap wrap
+    height auto
+    padding 20px
+
+  &_description
+    flex-basis 480px
+    margin 0
+    @media (max-width 768px)
+      display none
+
+  &_contacts
+    display flex
+    flex-direction column
+
+    .contact
+      &-number
+        font-size 14px
+        font-weight 500
+        @media (max-width 540px)
+          display block
+      &-email
+        color #fff
+        margin-top 15px
+        text-decoration none
+        &:hover
+          text-decoration underline
+
+  &_copyright
+    display flex
+    flex-basis 200px
+    flex-direction column
+
+    .copy
+      margin 0 0 15px
+
+    .privacy
+      color #fff
+      text-decoration none
+      &:hover
+        text-decoration underline
+
+  .logo
+    margin-left 0
+    @media (max-width 768px)
+      display none
